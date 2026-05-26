@@ -2,8 +2,6 @@
 #define USER_HPP
 #include <string>
 
-#endif // USER_HPP
-
 // Classe para representar um usuário na rede social, com atributos como ID, idade e nome.
 class Usuario
 {
@@ -13,5 +11,10 @@ private:
     std::string nome; // Nome do usuário
 
 public:
-    Usuario();
+    Usuario(int id, int idade, const std::string &nome);
+
+    int getId() const;           // Retorna o ID do usuário.
+    int getIdade() const;        // Retorna a idade do usuário.
+    std::string getNome() const; // Retorna o nome do usuário.
 };
+#endif // USER_HPP

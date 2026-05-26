@@ -2,8 +2,6 @@
 #define THEME_HPP
 #include <string>
 
-#endif // THEME_HPP
-
 // Classe para representar um tema na rede social, com atributos como ID, tipo e nome.
 class Tema
 {
@@ -12,5 +10,11 @@ private:
     char tipo;        // Tipo do tema
     std::string nome; // Nome do tema
 public:
-    Tema();
+    Tema(int id, char tipo, const std::string &nome);
+
+    int getId() const;           // Retorna o ID do tema.
+    char getTipo() const;        // Retorna o tipo do tema.
+    std::string getNome() const; // Retorna o nome do tema.
 };
+
+#endif // THEME_HPP

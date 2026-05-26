@@ -1,21 +1,21 @@
 #ifndef MAINNODE_HPP
 #define MAINNODE_HPP
-#include "genericNode.hpp"
 
 // Um nó principal para os Grafos na forma de Lista de Adjacências.
 // É componente head para listas duplamente encadeadas, com estrutura adaptável para Temas (T) ou Social (S).
 class MainNode
 {
-private:
+public:
     int id;    // ID do nó, para identificação do tema/user.
     char tipo; // 'U' para Usuário 'T' para Tema.
+    // Eixo principal: Users Seguidos em Grafo Social, Temas de um User em Grafo de Temas
+    // Users que seguem um tema em Grafo de Tema, ou simplesmente "next".
+    MainNode *eixoX;
 
-    genericNode *listaMain; // Lista principal; Users Seguidos(S) / Temas de um User(T) / Users de um Tema (T).
-    genericNode *listaSec;  // Lista secundária; Seguidores de um User (S).
+    // Eixo secundário: Seguidores de um User em Grafo Social ou simplesmente "previous".
+    MainNode *eixoY;
 
-public:
-    MainNode();
-    ~MainNode();
+    MainNode(int id, char tipo);
 };
 
 #endif // MAINNODE_HPP
