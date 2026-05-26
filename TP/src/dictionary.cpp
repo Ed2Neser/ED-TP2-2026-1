@@ -120,3 +120,5 @@ Tema *Dictionary::getTheme(int id) { return (id >= 0 && id < maxTemas) ? Temas[i
 MainNode *Dictionary::getSocialHead(int id) { return (id >= 0 && id < maxUsuarios) ? socialHeads[id] : nullptr; }
 MainNode *Dictionary::getThemeUserHead(int id) { return (id >= 0 && id < maxUsuarios) ? themeUserHeads[id] : nullptr; }
 MainNode *Dictionary::getThemeHead(int id) { return (id >= 0 && id < maxTemas) ? themeHeads[id] : nullptr; }
+
+//

@@ -18,4 +18,4 @@ public:
     MainNode(int id, char tipo);
 };
 
-#endif // MAINNODE_HPP
+#endif /// MAINNODE_HPP

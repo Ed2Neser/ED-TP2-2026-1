@@ -7,3 +7,4 @@ MainNode::MainNode(int id, char tipo)
     this->eixoX = nullptr;
     this->eixoY = nullptr;
 }
+//

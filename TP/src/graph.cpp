@@ -626,3 +626,5 @@ void Grafo::consultaPopularidade(int idTema)
         std::cout << "F " << dict->getTheme(idTema)->getNome() << " " << popularidade << std::endl;
     }
 }
+
+//

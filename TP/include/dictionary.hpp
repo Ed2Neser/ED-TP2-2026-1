@@ -33,4 +33,4 @@ public:
     MainNode *getThemeHead(int id);     // Encontra um nó cabeça 'T' de Grafo de Temas pelo ID.
 };
 
-#endif // DICTIONARY_HPP
+#endif /// DICTIONARY_HPP

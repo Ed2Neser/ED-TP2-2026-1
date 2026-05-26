@@ -17,4 +17,4 @@ public:
     int getIdade() const;        // Retorna a idade do usuário.
     std::string getNome() const; // Retorna o nome do usuário.
 };
-#endif // USER_HPP
+#endif /// USER_HPP

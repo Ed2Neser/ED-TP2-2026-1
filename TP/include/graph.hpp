@@ -38,4 +38,4 @@ public:
     void checaInteresse(int idUser, int idTema);       // Verifica se um usuário tem interesse em um tema específico, usando o eixoX do nó cabeça do usuário para verificar a presença do tema.
     void consultaPopularidade(int idTema);             // Consulta a popularidade de um tema específico, contando quantos usuários têm interesse nesse tema usando o eixoY do nó cabeça do tema para contar os seguidores.
 };
-#endif // GRAFO_HPP
+#endif /// GRAFO_HPP

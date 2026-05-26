@@ -17,4 +17,4 @@ public:
     std::string getNome() const; // Retorna o nome do tema.
 };
 
-#endif // THEME_HPP
+#endif /// THEME_HPP
